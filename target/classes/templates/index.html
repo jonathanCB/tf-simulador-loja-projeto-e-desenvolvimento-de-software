@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Galaxy Eventos</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link type="text/css" rel="stylesheet" href="../static/materialize/css/materialize.min.css"
+        media="screen,projection" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <h3><img src="../static/materialize/images/galaxia2.png" alt="galaxia2" width="50" height="40">Galaxy Eventos</h3>
+</head>
+
+<body>
+    <h1>
+        Cadastro de Eventos
+    </h1>
+
+    <h3>
+        <a href="pesquisarEvento.html" class="waves-effect waves-light btn">
+            <i class="material-icons left" id="lnkPesquisarEvento">format_list_bulleted</i>Pesquisar Evento
+        </a>
+    </h3>
+
+    <form class="container">
+
+        Nome: <input type="text" name="nomeEvento" id="nomeEvento"></input>
+        <div class="row">
+            <div class="input-field col s2">Dia da semana: <input type="text" name="diaSemana" id="diaSemana"></input>
+            </div>
+
+            <div class="input-field col s3">Quantidade de pessoas: <input type="number" name="qtdPessoas"
+                    id="qtdPessoas"></input>
+            </div>
+
+            <div class="input-field col s4"> Deseja desconto? <input type="text" name="descPromocional"
+                    id="descPromocional"></input>
+            </div>
+            <div class="input-field col s4"> Digite o código da organização beneficente: <input type="text" name="orgBeneficente"
+                id="orgBeneficente"></input>
+            </div>
+            <button id="btnOrgBeneficentes" onclick="mostrarOrgBeneficentes()" class="waves-effect waves-light btn btnSalvar">Mostrar organizaões beneficentes</button>
+            
+        </div>
+
+        <button id="btnSalvar" onclick="salvarEvento()" class="waves-effect waves-light btn btnSalvar">Salvar</button>
+
+    </form>
+    <script type="text/javascript" src="../static/js/script.js"></script>
+    <script type="text/javascript" src="../static/materialize/js/materialize.min.js"></script>
+
+</body>
+
+</html>

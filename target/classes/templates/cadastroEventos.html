@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Galaxy Eventos</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link type="text/css" rel="stylesheet" href="../static/materialize/css/materialize.min.css"
+        media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../static/materialize/css/tooltip.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <h3><img src="../static/materialize/images/galaxia2.png" alt="galaxia2" width="50" height="40">Galaxy Eventos</h3>
+</head>
+
+<body>
+    <h3>
+        <a href="index.html" class="waves-effect waves-light btn"><i
+                class="material-icons left">format_list_bulleted</i>Home</a>
+    </h3>
+    <h3>
+        <a href="pesquisarEvento.html" class="waves-effect waves-light btn">
+            <i class="material-icons left" id="lnkPesquisarEvento">format_list_bulleted</i>Pesquisar Evento
+        </a>
+    </h3>
+    <h1>
+        Cadastro de Eventos
+    </h1>
+    <form class="container">
+
+        Nome*: <input type="text" name="nomeEvento" id="nomeEvento"></input>
+        <div class="row">
+            <div class="input-field col s2">Dia da semana*: <input type="text" name="diaSemana" id="diaSemana"></input>
+            </div>
+
+            <div class="input-field col s3">Quantidade de pessoas*: <input type="number" name="qtdPessoas"
+                    id="qtdPessoas"></input>
+            </div>
+
+            <div class="input-field col s4"> Deseja desconto?* <input type="text" name="descPromocional"
+                    id="descPromocional"></input>
+            </div>
+            <div class="input-field col s4"> Digite o código da organização beneficente*: <input type="text" name="orgBeneficente"
+                id="orgBeneficente"></input>
+                <h4>Sobre o desconto</h4>
+                <span class="tooltip" onmouseover="tooltip.pop(this, '<h3>Importante</h3>Desconto = Sim: Ao optar pelo desconto, você deverá dirigir-se a um centro de coleta da Galaxy Eventos para entregar os alimentos e depois utilizar o código gerado para efetuar o pagamento pelo site.<br><br>Desconto = Não: Ao não optar pelo desconto, o usuário estará ciente de que será acrescido 10% sob o valor do evento, que será redirecionado a organizações beneficentes.')">Clique aqui</span>
+            </div>
+            <div class="container">
+                
+                <div class="row"></div>
+                
+                    <div class="conteudo" id="orgBeneficentes" style="display:none;">             
+                        <tr>
+                            <td><p><b>1 - Organização PAZ</b><span id="codigo1"></span></p></td>
+                            <td><p><b>2 - Organização ESPERANÇA </b><span id="nome1"></span></p></td>
+                            <td><p><b>3 - Organização GENEROSIDADE </b><span id="codigo2"></span></p></td>
+                        </tr>
+                    </div>
+                </div>
+            </div>
+
+        <button id="btnOrgBeneficentes" onclick="mostrarOrgBeneficentes(); return false;" class="waves-effect waves-light btn btnSalvar">Mostrar organizações beneficentes disponíveis</button>
+
+        <button id="btnSalvar" onclick="salvarEvento()" class="waves-effect waves-light btn btnSalvar">Salvar evento</button>
+
+    </form>
+    <script type="text/javascript" src="../static/js/script.js"></script>
+    <script type="text/javascript" src="../static/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../static/js/tooltip.js"></script>
+    <div class="row"></div>
+
+</body>
+
+</html>

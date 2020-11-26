@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.194" tests="27" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.21" tests="27" errors="0" skipped="0" failures="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_261\jre\bin"/>
     <property name="java.vm.version" value="25.261-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\jonas\OneDrive\Área de Trabalho\Faculdade\3º Semestre\Programação\3º Semestre - Fundamentos do Desenvolvimento de Software\Trabalho_Final\TrabalhoFinal_FundDesenDeSoftware"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\jonas\OneDrive\Área de Trabalho\Faculdade\4º Semestre\Projeto e Desenvolvimento de Software\Trabalho II\Projeto"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\jonas\OneDrive\Área de Trabalho\Faculdade\3º Semestre\Programação\3º Semestre - Fundamentos do Desenvolvimento de Software\Trabalho_Final\TrabalhoFinal_FundDesenDeSoftware"/>
+    <property name="user.dir" value="C:\Users\jonas\OneDrive\Área de Trabalho\Faculdade\4º Semestre\Projeto e Desenvolvimento de Software\Trabalho II\Projeto"/>
     <property name="java.runtime.version" value="1.8.0_261-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_261\jre\lib\endorsed"/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_261\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="pt"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -64,31 +64,43 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testeComDesconto{String, double, double}[1]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.05"/>
+  <testcase name="testeComDesconto{String, double, double}[1]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.037"/>
   <testcase name="testeComDesconto{String, double, double}[2]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
-  <testcase name="testeComDesconto{String, double, double}[3]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.002"/>
-  <testcase name="testeComDesconto{String, double, double}[4]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.001"/>
+  <testcase name="testeComDesconto{String, double, double}[3]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
+  <testcase name="testeComDesconto{String, double, double}[4]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
   <testcase name="testePorQtdPessoas{int, double}[1]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
-  <testcase name="testePorQtdPessoas{int, double}[2]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
-  <testcase name="testePorQtdPessoas{int, double}[3]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.001"/>
+  <testcase name="testePorQtdPessoas{int, double}[2]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.001"/>
+  <testcase name="testePorQtdPessoas{int, double}[3]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
   <testcase name="testePorQtdPessoas{int, double}[4]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
   <testcase name="testePorQtdPessoas{int, double}[5]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.001"/>
   <testcase name="testePorQtdPessoas{int, double}[6]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
-  <testcase name="testePorQtdPessoas{int, double}[7]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
+  <testcase name="testePorQtdPessoas{int, double}[7]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.001"/>
   <testcase name="testePorQtdPessoas{int, double}[8]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
-  <testcase name="testePorQtdPessoas{int, double}[9]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
-  <testcase name="testePorQtdPessoas{int, double}[10]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.001"/>
+  <testcase name="testePorQtdPessoas{int, double}[9]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.001"/>
+  <testcase name="testePorQtdPessoas{int, double}[10]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
   <testcase name="testePorQtdPessoas{int, double}[11]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
   <testcase name="testePorDiaDaSemana{String, double}[1]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
-  <testcase name="testePorDiaDaSemana{String, double}[2]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
-  <testcase name="testePorDiaDaSemana{String, double}[3]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.003"/>
-  <testcase name="testePorDiaDaSemana{String, double}[4]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.001"/>
+  <testcase name="testePorDiaDaSemana{String, double}[2]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.001"/>
+  <testcase name="testePorDiaDaSemana{String, double}[3]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
+  <testcase name="testePorDiaDaSemana{String, double}[4]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
   <testcase name="testePorDiaDaSemana{String, double}[5]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
-  <testcase name="testePorDiaDaSemana{String, double}[6]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.001"/>
-  <testcase name="testePorDiaDaSemana{String, double}[7]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.003"/>
+  <testcase name="testePorDiaDaSemana{String, double}[6]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
+  <testcase name="testePorDiaDaSemana{String, double}[7]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
   <testcase name="testePorDiaDaSemana{String, double}[8]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
-  <testcase name="testeSemDesconto{String, double, double}[1]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.001"/>
-  <testcase name="testeSemDesconto{String, double, double}[2]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
-  <testcase name="testeSemDesconto{String, double, double}[3]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
-  <testcase name="testeSemDesconto{String, double, double}[4]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
+  <testcase name="testeSemDesconto{String, double, double}[1]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0"/>
+  <testcase name="testeSemDesconto{String, double, double}[2]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.02">
+    <failure message="expected: &lt;0.0&gt; but was: &lt;5.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <0.0> but was: <5.0>
+	at com.eventoapp.eventoapp.EventoappApplicationTest.testeSemDesconto(EventoappApplicationTest.java:61)
+]]></failure>
+  </testcase>
+  <testcase name="testeSemDesconto{String, double, double}[3]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0">
+    <failure message="expected: &lt;0.0&gt; but was: &lt;100.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <0.0> but was: <100.0>
+	at com.eventoapp.eventoapp.EventoappApplicationTest.testeSemDesconto(EventoappApplicationTest.java:61)
+]]></failure>
+  </testcase>
+  <testcase name="testeSemDesconto{String, double, double}[4]" classname="com.eventoapp.eventoapp.EventoappApplicationTest" time="0.001">
+    <failure message="expected: &lt;0.0&gt; but was: &lt;200.0&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <0.0> but was: <200.0>
+	at com.eventoapp.eventoapp.EventoappApplicationTest.testeSemDesconto(EventoappApplicationTest.java:61)
+]]></failure>
+  </testcase>
 </testsuite>

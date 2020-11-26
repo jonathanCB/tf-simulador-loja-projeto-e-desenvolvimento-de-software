@@ -26,7 +26,7 @@ async function salvarEvento() {
         const obj = JSON.parse(json);
 
         if (parseInt(obj.codigo) > 0) {
-            alert("Evento salvo com sucesso :D Codigo = " + obj.codigo);
+            alert("Evento salvo com sucesso!\nAnote o código do evento = [" + obj.codigo + "]\n\nSe você optou pelo desconto, dirija-se até o centro de coleta da Galaxy Eventos mais próximo para entregar os alimentos.\nSe você não optou pelo desconto, clique em 'Pesquisar Evento', insira o código e efetue o pagamento.");
         }
         else {
             alert("Aconteceu algum erro ao salvar o Evento, por favor, tente novamente");
@@ -134,4 +134,13 @@ async function PesquisarOrgBeneficente() {
         console.log(erro);
     }
 }
+
+async function mostrarOrgBeneficentes(){
+    var submenu = document.getElementById('orgBeneficentes');
+    if(submenu.style.display == 'block'){
+        submenu.style.display = 'none';
+    }else{
+        submenu.style.display = 'block';
+    }
+    }
 

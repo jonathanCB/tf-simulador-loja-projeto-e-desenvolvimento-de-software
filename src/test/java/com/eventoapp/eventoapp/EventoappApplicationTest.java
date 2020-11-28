@@ -46,19 +46,21 @@ public class EventoappApplicationTest {
         // Setando um custo total fixo para o evento:
         this.evento.setCustoDoEvento(custoTotalEvento);
         // Testando a classe DescontoPromocional.java:
+        // valorTaxa sera um desconto ou uma taxa a mais no custo total do evento.
         double valorDesconto = desconto.desconto(this.evento);
         // Comparando os resultados:
         assertEquals(resp, valorDesconto);
     }
 
+    // Fazendo testes parametrizados eventos sem desconto, onde o custo total aumentara 10%.
     @ParameterizedTest
-    @CsvSource({ "nao, 0.00, 0.00", "nao, 50.00, 0.00", "nao, 1000.00, 0.00", "nao, 2000.00, 0.00" })
+    @CsvSource({ "nao, 0.00, 0.00", "nao, 50.00, 5.00", "nao, 1000.00, 100.00", "nao, 2000.00, 200.00" })
     public void testeSemDesconto(String descontoPromocional, double custoTotalEvento, double resp) {
         // Criando o evento com desconto promocional como "nao":
         this.evento = new Evento(this.nomeEvento, this.qtdPessoas, this.diaDaSemana, descontoPromocional);
         this.evento.setCustoDoEvento(custoTotalEvento);
-        double valorDesconto = desconto.desconto(this.evento);
-        assertEquals(resp, valorDesconto);
+        double valorTaxa = desconto.desconto(this.evento);
+        assertEquals(resp, valorTaxa);
     }
 
     // Fazendo testes parametrizados para a classe ValoresPorDiaDeSemana:

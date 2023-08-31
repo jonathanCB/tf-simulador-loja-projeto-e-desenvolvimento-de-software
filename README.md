@@ -1,4 +1,4 @@
-# TrabFinal-ProjEDesenvDeSoftware
+# Trabalho final da disciplina de Projeto e Desenvolvimento de Software
 
 OBSERVAÇÕES/USO
 
